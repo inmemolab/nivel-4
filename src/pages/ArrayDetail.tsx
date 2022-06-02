@@ -6,7 +6,7 @@ import Row from "react-bootstrap/Row";
 const ArrayDetail = (props: { match: { params: { id: any } } }) => {
   // axios
   const apiClient = axios.create({
-    baseURL: "http://localhost:3000",
+    baseURL: "https://keo-test-3.herokuapp.com",
     headers: {
       "Content-type": "application/json",
     },

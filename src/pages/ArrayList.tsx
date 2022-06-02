@@ -5,7 +5,7 @@ import axios from "axios";
 const ArrayList = () => {
   // Axios
   const apiClient = axios.create({
-    baseURL: "http://localhost:3000",
+    baseURL: "https://keo-test-3.herokuapp.com",
     headers: {
       "Content-type": "application/json",
     },
