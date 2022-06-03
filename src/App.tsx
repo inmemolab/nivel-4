@@ -21,11 +21,6 @@ function App() {
               Stats
             </Link>
           </li>
-          <li className="nav-item">
-            {/* <Link to={"/array-post"} className="nav-link">
-              Post Number
-            </Link> */}
-          </li>
         </div>
       </nav>
 

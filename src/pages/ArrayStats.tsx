@@ -33,14 +33,10 @@ const ArrayStats = () => {
             result: response.data.result,
           },
         ]);
-
-        console.log(response.data);
-        console.log(arrayList);
       })
       .catch((error) => {
         setIsLoading(false);
         setIsError(true);
-        console.log(error);
       });
   };
   //

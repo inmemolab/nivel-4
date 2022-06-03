@@ -22,13 +22,10 @@ const ArrayDetail = (props: { match: { params: { id: any } } }) => {
       .then((response) => {
         setIsLoading(false);
         setArrayList(response.data.result);
-        console.log(response.data.result);
-        console.log(arrayList);
       })
       .catch((error) => {
         setIsLoading(false);
         setIsError(true);
-        console.log(error);
       });
   };
   // useEffect
