@@ -81,12 +81,9 @@ const ArrayStats = () => {
           </div>
 
           <Row>
-            <Col>
-              <div>
-                <h3>Resultado:</h3> <pre>{JSON.stringify(result, null, 2)}</pre>
-              </div>
-            </Col>
-            <Col></Col>
+            <div>
+              <h3>Resultado:</h3> <pre>{JSON.stringify(result, null, 2)}</pre>
+            </div>
           </Row>
         </>
       ))}
