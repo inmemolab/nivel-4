@@ -22,8 +22,8 @@ const ArrayStats = () => {
       .get("/api/stats", { params: { isnumber: id } })
       .then((response) => {
         setIsLoading(false);
-        setArrayList(response.data.result);
-        console.log(response.data.result);
+        setArrayList(response.data);
+        console.log(response.data);
         console.log(arrayList);
       })
       .catch((error) => {
