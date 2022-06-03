@@ -4,6 +4,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
 
 import ArrayList from "./pages/ArrayList";
+import ArrayStats from "./pages/ArrayStats";
 import ArrayDetail from "./pages/ArrayDetail";
 import ArrayPost from "./pages/ArrayPost";
 
@@ -16,6 +17,11 @@ function App() {
         </a>
         <div className="navbar-nav mr-auto">
           <li className="nav-item">
+            <Link to={"/array-stats"} className="nav-link">
+              Stats
+            </Link>
+          </li>
+          <li className="nav-item">
             <Link to={"/array-post"} className="nav-link">
               Post Number
             </Link>
@@ -27,6 +33,7 @@ function App() {
         <Switch>
           <Route exact path={["/", "/array-list"]} component={ArrayList} />
           <Route path="/array-detail/:id" component={ArrayDetail} />
+          <Route path="/array-stats" component={ArrayStats} />
           <Route exact path="/array-post" component={ArrayPost} />
         </Switch>
       </div>
