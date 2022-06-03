@@ -55,7 +55,7 @@ const ArrayStats = () => {
             setValue(e.target.value);
           }}
         />
-        <button onClick={handle}>Button</button>
+        <button onClick={handle}>Buscar</button>
       </div>
       {arrayList.map(({ total, count, ratio, result }) => (
         <>
