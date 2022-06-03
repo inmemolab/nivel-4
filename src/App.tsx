@@ -22,9 +22,9 @@ function App() {
             </Link>
           </li>
           <li className="nav-item">
-            <Link to={"/array-post"} className="nav-link">
+            {/* <Link to={"/array-post"} className="nav-link">
               Post Number
-            </Link>
+            </Link> */}
           </li>
         </div>
       </nav>
