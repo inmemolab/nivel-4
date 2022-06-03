@@ -12,7 +12,9 @@ const ArrayStats = () => {
     },
   });
   // useState
-  const [arrayList, setArrayList] = useState([]);
+  const [arrayList, setArrayList] = useState<
+    { total: any; count: any; ratio: any; result: any }[]
+  >([]);
   const [isLoading, setIsLoading] = useState(false);
   const [isError, setIsError] = useState(false);
   const [value, setValue] = useState("");
@@ -22,7 +24,16 @@ const ArrayStats = () => {
       .get("/api/stats", { params: { isnumber: id } })
       .then((response) => {
         setIsLoading(false);
-        setArrayList(response.data);
+        setArrayList((data) => [
+          ...data,
+          {
+            total: response.data.total,
+            count: response.data.count,
+            ratio: response.data.ratio,
+            result: response.data.result,
+          },
+        ]);
+
         console.log(response.data);
         console.log(arrayList);
       })
